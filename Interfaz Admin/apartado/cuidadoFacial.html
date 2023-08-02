@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de producto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-success fixed-top">
+        <div class="container-fluid">
+            <button id="button" class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="container-nav">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="imagenes/photo_2023-07-03_14-30-11.jpg" width="60px" alt="">
+                    </a>
+                    <h1>Administración</h1>
+                </div>
+            </div>
+            <div class="actions">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavba" aria-controls="offcanvasDarkNavbar aria-label=" Toggle
+                    navigation">
+                    <img id="img3" src="https://www.pngall.com/wp-content/uploads/5/User-Profile-PNG-Free-Download.png"
+                        width="50px" alt="">
+                </button>
+            </div>
+        </div>
+
+
+
+        <div class="offcanvas offcanvas-start text-bg-dark bg-success" tabindex="-1" id="offcanvasDarkNavbar"
+            aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header bg-success">
+                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Productos</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page"
+                            href="cuidadoCabello.html">Cuidado de cabello</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="cuidadoFacial.html">Cuidado facial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="cuidadoPiel.html">Cuidado de la piel</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page"
+                            href="maquillaje.html">Maquillaje</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="offcanvas offcanvas-end text-bg-dark bg-success" tabindex="-1" id="offcanvasDarkNavba"
+            aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header bg-success">
+                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Usuario</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="login.html">Cerrar sesión</a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <div class="row">
+
+                <header>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+
+                    <h1>Lista de productos</h1>
+                    <table class="table">
+
+                        <thead class="thead-light">
+                            <tr>
+                                <th scope="col">Id producto</th>
+                                <th scope="col">Nombre del producto</th>
+                                <th scope="col">Imagen</th>
+                                <th scope="col">Cantidad Existente</th>
+                                <th scope="col">Precio de venta</th>
+                                <th scope="col">Descripción</th>
+                                <th scope="col">Precio de fabricación</th>
+                                <th scope="col">Categoria</th>
+                                <th scope="col">Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Pasta de dientes con extracto de carbon</td>
+                                <td> <img src="/productos/imgenesProductos/1618471.avif"
+                                        alt="" width="100"></td>
+                                <td>30</td>
+                                <td>$85.50</td>
+                                <td>Pasta de dientes con trozitos de carbon</td>
+                                <td>$50.00</td>
+                                <td>Cuidado facial</td>
+                                <td> <a href="/Interfaz Admin/Editar.html">Editar</a>
+                                    <a href="">Eliminar</a>
+                                </td>
+                            </tr>
+                        </tbody>
+
+                        <tbody>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Crema natural</td>
+                                <td> <img src="/productos/imgenesProductos/bodyactive_mon-683x1024.webp"
+                                        alt="" width="100"></td>
+                                <td>45</td>
+                                <td>$99.99</td>
+                                <td>Cuidado de la piel hecho con ingredientes naturales que hidrata y nutre la piel sin químicos agresivos.</td>
+                                <td>$59.99</td>
+                                <td>Cuidado facial</td>
+                                <td> <a href="/Interfaz Admin/Editar.html">Editar</a>
+                                    <a href="">Eliminar</a>
+                                </td>
+                            </tr>
+                        </tbody>
+
+                        <tbody>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Crema Destoice</td>
+                                <td> <img src="/productos/imgenesProductos/download.jpeg"
+                                        alt="" width="100"></td>
+                                <td>105</td>
+                                <td>$120 MXN</td>
+                                <td>Crema hecha de hojas para la cara.</td>
+                                <td>$65.00</td>
+                                <td>Cuidado de cabello</td>
+                                <td> <a href="/Interfaz Admin/Editar.html">Editar</a>
+                                    <a href="">Eliminar</a>
+                                </td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                    <div class="boton">
+                        <a name="" id="" class="btn btn-success" href="/Interfaz Admin/Registrar.html" role="button">Agregar
+                            producto</a>
+                    </div>
+            </div>
+        </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

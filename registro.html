@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+
+
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+
+    <header>
+        <br>
+        <br>
+        <br>
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="signin-logo">
+                    <img class="img" src="Mj.png" alt="imagen">
+                </div>
+
+                <div class="col-md-3">
+                </div>
+
+                <br>
+                <form id="registro-form" onsubmit="return fetchcall()">
+                    <div class="card">
+                        <div class="card-header">
+                            Completa los siguientes datos
+                        </div>
+                        <div class="card-body">
+
+                            <div class="mb-2">
+                                <label for="" class="form-label">Nombres y Apellido</label>
+                                <input type="text" class="form-control" name="name" placeholder="Nombres y Apellidos">
+                                <small id="helpId" class="form-text text-muted">Escriba sus Nombres y apellidos</small>
+                            </div>
+                            <div class="mb-2">
+                                <label for="" class="form-label">Email</label>
+                                <input type="email" class="form-control" name="email" aria-describedby="helpId"
+                                    placeholder="Correo">
+                                <small id="helpId" class="form-text text-muted">Escriba el correo</small>
+                            </div>
+                            <div class="mb-2">
+                                <label for="" class="form-label">Numero Telefonico</label>
+                                <input type="number" class="form-control" name="phoneNumber" placeholder=" Numero">
+                                <small id="helpId" class="form-text text-muted">Escriba su numero Telefonico</small>
+                            </div>
+                            <div class="mb-2">
+                                <label for="" class="form-label">Password</label>
+                                <input type="password" class="form-control" name="password" placeholder="Password">
+                                <small id="helpId" class="form-text text-muted">Asigne una contraseña</small>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="row justify-content-md-center">
+                            <div class="col-md-3">
+                            </div>
+                            <br>
+                            <div class="card">
+                                <div class="card-header">
+                                    Datos de Domicilio
+                                </div>
+                                <div class="card-body">
+                                    <div class="mb-2">
+                                        <label for="" class="form-label">Codigo postal</label>
+                                        <input type="number" class="form-control" name="zipCode" placeholder="Codigo Postal">
+                                        <small id="helpId" class="form-text text-muted">Escriba su codigo postal</small>
+                                    </div>
+                                    <div class="mb-2">
+                                        <label for="" class="form-label">Colonia</label>
+                                        <input type="text" class="form-control" name="neighbordhood" placeholder="Colonia">
+                                        <small id="helpId" class="form-text text-muted">Escriba la Colonia</small>
+                                    </div>
+                                    <div class="mb-2">
+                                        <label for="" class="form-label">Calle</label>
+                                        <input type="text" class="form-control" name="street" placeholder="Calle">
+                                        <small id="helpId" class="form-text text-muted">Escriba la calle</small>
+                                    </div>
+                                    <div class="mb-2">
+                                        <label for="" class="form-label">No. Casa</label>
+                                        <input type="text" class="form-control" name="numberHouse" placeholder="No. Casa">
+                                        <small id="helpId" class="form-text text-muted">Escriba el numero de su casa</small>
+                                    </div>
+                                    <div class="mb-2">
+                                        <label for="" class="form-label">Referencias</label>
+                                        <input type="text" class="form-control" name="references" placeholder="Referencias ">
+                                        <small id="helpId" class="form-text text-muted">Escriba la Referencias</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <br>
+                    <div class="boton">
+                        <!-- <a name="" id="" class="btn btn-success" href="login.html" role="button">Crear cuenta</a> -->
+                        <input type="submit" class="btn btn-success" value="Crear cuenta" />
+                    </div>
+                </form>
+            </div>
+
+
+        </div>
+        
+        <br>
+    </header>
+
+
+    <script src="js/registro.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+        integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

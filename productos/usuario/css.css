@@ -1,0 +1,19 @@
+.signin-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.signin-logo .img {
+    width: 300px;
+    height: 300px;
+}
+.boton{
+    display: flex;
+    justify-content: center;
+}
+
