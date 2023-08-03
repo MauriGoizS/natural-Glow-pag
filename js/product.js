@@ -48,7 +48,7 @@ function displayProduct() {
         <div class="col-md-6 order-md-2" id="carrito">
             <h2 class="text-center">${producto.nombre}</h2>
             <h3>$ ${producto.precioventa} MXN</h3>
-            <p><img src="imagenes/entrega_318-552263.avif" width="35px" alt=""> Envio a domicilio</p>
+            <p><img src="imagenes/delivery.avif" width="35px" alt=""> Envio a domicilio</p>
             <p>Cantidad disponible: ${producto.cantidadexistente}</p>
             <div class="d-flex flex-column align-items-center justify-content-center">
                 

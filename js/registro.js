@@ -6,7 +6,7 @@ function fetchcall() {
 
     // (B2) FETCH
 
-    fetch("php/authentication/signup.php", { method: "POST", body: form })
+    fetch("/interfazCompleto/php/authentication/signup.php", { method: "POST", body: form })
         .then(res => res.text())
         .then(txt => console.log(txt))
         .catch(err => console.error(err));

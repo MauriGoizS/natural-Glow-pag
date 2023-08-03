@@ -12,13 +12,13 @@ document.getElementById('navbar').innerHTML = /*html*/ `
         </div>
         <div class="actions">
             <a href="/interfazCompleto/carrito.html"><img id="img2"
-                    src="https://www.pngall.com/wp-content/uploads/5/Shopping-Cart-PNG-Clipart.png  "></a>
+                    src="/interfazCompleto/imagenes/carrito.png"></a>
 
 
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasDarkNavba" aria-controls="offcanvasDarkNavbar aria-label=" Toggle
                 navigation">
-                <img id="img3" src="https://www.pngall.com/wp-content/uploads/5/User-Profile-PNG-Free-Download.png"
+                <img id="img3" src="/interfazCompleto/imagenes/user.png"
                     width="50px" alt="">
             </button>
 
@@ -67,7 +67,7 @@ document.getElementById('navbar').innerHTML = /*html*/ `
                     <a class="nav-link active" aria-current="page" href="usuario/login.html">Iniciar Sesion</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="usuario/registro.html">Registrarse</a>
+                    <a class="nav-link active" aria-current="page" href="/interfazCompleto/registro.html">Registrarse</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="usuario/estatus.html">Seguimiento del
