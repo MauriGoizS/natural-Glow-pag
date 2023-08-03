@@ -22,7 +22,7 @@ setTimeout(() => {
     displayLoading();
   });
 
-}, 1000);
+}, 1500);
 
 
 function displayProducts() {
@@ -62,7 +62,7 @@ function displayProducts() {
           </div>
           <h4>$${producto.precioventa} MXN</h4>
           <div class="card-footer centrar">
-              <a href="/interfazCompleto/productos/${producto.url}.html" class="ver-producto-btn">Ver Producto</a>
+              <a href="/interfazCompleto/productos/producto.html?idProducto=${producto.idproducto}" class="ver-producto-btn">Ver Producto</a>
           </div>
       </div>
       `
