@@ -72,7 +72,7 @@ div div a {
 
 /* Cambiar el color del botón al pasar el cursor */
 .ver-producto-btn:hover {
-    background-color: #10aab5;
+    background-color: #14b383;
     color: #fff;
 }
 
@@ -106,6 +106,25 @@ div div a {
 
 .card .card-img-top {
     max-height: 300px;
+}
+
+.signin-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.signin-logo .img {
+    width: 300px;
+    height: 300px;
+}
+.boton{
+    display: flex;
+    justify-content: center;
 }
 
 #img1 {
@@ -222,4 +241,6 @@ p {
     padding: 5px 24px 5px  24px ;
 }
 
-
+.pointer {
+    cursor: pointer;
+}

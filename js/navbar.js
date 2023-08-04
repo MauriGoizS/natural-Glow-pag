@@ -1,3 +1,19 @@
+function cerrarSesion() {
+    localStorage.removeItem('cliente');
+    window.location.href = '/interfazCompleto/index.html';
+}
+
+function usuarioEstaLogueado() {
+    const cliente = localStorage.getItem('cliente');
+    if (cliente !== null) {
+        const clienteObject = JSON.parse(cliente);
+        console.log('Esta imprimiendo clienteObject', clienteObject);
+        document.getElementById('user-name').innerText = clienteObject.nombres;
+    } else {
+        document.getElementById('user-name').innerText = '';
+    }
+}
+
 document.getElementById('navbar').innerHTML = /*html*/ `
 <div class="container-fluid">
     <button id="button" class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
@@ -21,7 +37,7 @@ document.getElementById('navbar').innerHTML = /*html*/ `
                 <img id="img3" src="/interfazCompleto/imagenes/user.png"
                     width="50px" alt="">
             </button>
-
+            <span id="user-name"></span>
         </div>
     </div>
 
@@ -64,17 +80,27 @@ document.getElementById('navbar').innerHTML = /*html*/ `
         <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="usuario/login.html">Iniciar Sesion</a>
+                    <a class="nav-link active" aria-current="page" href="/interfazCompleto/login.html">Iniciar Sesion</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="/interfazCompleto/registro.html">Registrarse</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="usuario/estatus.html">Seguimiento del
+                    <a class="nav-link active" aria-current="page" href="/interfazCompleto/estatus.html">Seguimiento del
                         pedido</a>
+                </li>
+                <li class="nav-item">
+                    <a id="cerrar-sesion" class="nav-link active pointer" aria-current="page">Cerrar sesión</a>
                 </li>
             </ul>
         </div>
     </div>
 </div>
 `
+
+document.getElementById('cerrar-sesion').addEventListener('click', function () {
+    localStorage.removeItem('cliente');
+    window.location.href = '/interfazCompleto/index.html';
+})
+
+usuarioEstaLogueado();

@@ -1,13 +1,11 @@
 let cliente = null;
 
-function signup() {
+function login() {
     // (B1) GET FORM DATA
-
-    const form = new FormData(document.getElementById("registro-form"));
+    const form = new FormData(document.getElementById('login-form'));
 
     // (B2) FETCH
-
-    fetch("/interfazCompleto/php/authentication/signup.php", { method: "POST", body: form })
+    fetch('/interfazCompleto/php/authentication/signin.php', { method: 'POST', body: form })
         .then(res => res.json())
         .then(res => {
             cliente = res.data;

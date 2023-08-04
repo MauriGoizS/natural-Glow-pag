@@ -13,8 +13,8 @@ async function getProduct() {
 }
 
 getProduct()
-.then(product => {
-    producto = product;
+.then(respuesta => {
+    producto = respuesta;
     displayProduct();
 })
 .catch(error => {

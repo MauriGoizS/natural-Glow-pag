@@ -12,7 +12,6 @@ setTimeout(() => {
   getProductos()
   .then(products => {
     productos = products;
-    console.log("productos", productos);
     displayProducts();
     loading = false;
     displayLoading();
