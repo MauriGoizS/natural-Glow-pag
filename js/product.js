@@ -83,7 +83,7 @@ function addEventListenerCarritoBoton() {
         // idproducto
         // cantidad
         
-        agregarAlCarrito(producto.idproducto, cantidad);
+        agregarAlCarrito(producto, cantidad);
     });
 
     const selectCantidad = document.getElementById('select-seleccionar-cantidad');
@@ -104,9 +104,9 @@ function obtenerCarrito() {
 
 obtenerCarrito();
 
-function agregarAlCarrito(idProducto, cantidad) {
+function agregarAlCarrito(producto, cantidad) {
     const productoSeleccionado = {
-        idProducto: idProducto,
+        producto: producto,
         cantidad: cantidad
     };
 

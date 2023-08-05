@@ -22,38 +22,16 @@
       <div class="row">
 
         <h1>Carrito de compras</h1>
-        <div class="col-sm-4">
-          <div class="card-group">
-            <div class="card">
-              <img class="card-img-top" src="https://sdcdn.io/mac/mx/mac_sku_M2LP70_1x1_0.png?width=1440&height=1440" class="card-img-top" alt="labial">
-              <div class="card-body ">
-                <h5 class="card-title">Labial Rosa</h5>
-                <p class="card-text">Labial rosa No.1</p>
-                <h4 class="card-text">$50.00 MXN</h4>
-                <div class="card-footer centrar">
-                  <a name="" id="" class="btn btn-success" href="#" role="button">Eliminar</a>
-                  <a name="" id="" class="btn btn-primary" href="productos/labial.html" role="button">Ver detalles </a>
-                </div>
-              </div>
-            </div>
-          </div>
+
+        <h2 id="mensaje-carrito-vacio" style="display: none;">No tienes productos en tu carrito</h2>
+
+        <div id="listado-productos" class="list-group">
         </div>
 
 
-        <div class="row">
-          <div class="col-8">
-            <h2>Total de pago</h2>
-            <h4>$50.00 MNX</h4>
-            <br>
-            <a name="" id="" class="btn btn-primary"
-              href="https://www.mercadolibre.com/jms/mlm/lgz/msl/login/H4sIAAAAAAAEA42NTU_jMBCG_8scOIWWgmCXSBFK0qqCbZsSYOFmDc7ENWvXXmdSlyL-Owos973N-_XMGxin9FbwqydIgfbeaKkZEvAGuXXBCt1ACtZDAp1m-ieNHSoY0BJT6CB9G0CKmoJaFwZUi6YjSAB73ojWuAjp1y9IQHeC9kxhi0ZEet5pGtLvhXKQwobZd-l4HGMcWQoSG-dRuZF0dmT3Y4-6uerZis71QVKmnFOGjgbHUqN7m0kvP6VE61GrbbZcLMVyLeYir8R8thL5YiGKOl9NP6-yWv0WRV3l0yOLzIKdM9nP88nk7PLk8suKLjT_T1HS6CYrX-KvMn-J3Fem2BT1TMf8B6p20j-ohx3L20dZnG_U9VOFfHpxc39AdSxv5tf5obzzF6YO6_ZvlLqMh92xqF15Rie3-W4qijiD9wRa7FhwQPkHUg49vX8AiGjvYtABAAA/user"
-              role="button">Comprar con Mercado Pago</a>
-            <a name="" id="" class="btn btn btn-outline-dark " href="index.html" role="button">Regresar a la pantalla
-              principal</a>
-
-
-
-          </div>
+        <div class="contenedor-botones-accion">
+          <a id="btn-eliminar" class="btn btn-danger" role="button">Eliminar carrito</a>
+          <a id="btn-comprar" class="btn btn-success" role="button">Realizar compra</a>
         </div>
 
 
@@ -63,6 +41,7 @@
   </main>
 
   <script src="js/navbar.js"></script>
+  <script src="js/carrito.js"></script>
 
 </body>
 </html>
