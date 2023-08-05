@@ -1,14 +1,19 @@
 let carrito = null;
 
+const btnEliminar = document.getElementById('btn-eliminar');
+const btnComprar = document.getElementById('btn-comprar');
+
 function obtenerCarrito() {
     const infoCarrito = localStorage.getItem('carrito');
     if (infoCarrito !== null) {
         carrito = JSON.parse(infoCarrito);
         mostrarListadoProductos();
+        btnEliminar.classList.remove('disabled');
     } else {
         // Si está vacío el carrito se tiene que mostrar un mensaje de carrito vacío
         document.getElementById('mensaje-carrito-vacio').style.display = 'block';
         carrito = [];
+        btnEliminar.classList.add('disabled');
     }
 }
 
@@ -59,4 +64,4 @@ function eliminarCarrito() {
     mostrarListadoProductos();
 }
 
-document.getElementById('btn-eliminar').addEventListener('click', eliminarCarrito);
+btnEliminar.addEventListener('click', eliminarCarrito);
