@@ -27,9 +27,10 @@ document.getElementById('navbar').innerHTML = /*html*/ `
             </a>
         </div>
         <div class="actions">
-            <a href="/interfazCompleto/carrito.html"><img id="img2"
-                    src="/interfazCompleto/imagenes/carrito.png"></a>
-
+            <a class="carrito-icono" href="/interfazCompleto/carrito.html">
+                <img id="img2" src="/interfazCompleto/imagenes/carrito.png">
+                <span id="badge-carrito" class="badge-carrito"></span>
+            </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasDarkNavba" aria-controls="offcanvasDarkNavbar aria-label=" Toggle
@@ -104,3 +105,17 @@ document.getElementById('cerrar-sesion').addEventListener('click', function () {
 })
 
 usuarioEstaLogueado();
+
+function tieneProductosElCarrito() {
+    const infoCarrito = localStorage.getItem('carrito');
+    const badgeCarrito = document.getElementById('badge-carrito');
+    if (infoCarrito !== null) {
+        badgeCarrito.style.display = 'block';
+        const carrito = JSON.parse(infoCarrito);
+        badgeCarrito.innerText = carrito.length;
+    } else {
+        badgeCarrito.style.display = 'none';
+    }
+}
+
+tieneProductosElCarrito();
