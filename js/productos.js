@@ -20,7 +20,7 @@ setTimeout(() => {
     displayLoading();
   });
 
-},100);
+},1000);
 
 
 function displayProducts() {

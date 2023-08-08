@@ -44,7 +44,7 @@ document.getElementById('navbar').innerHTML = /*html*/ `
     <div class="offcanvas offcanvas-start text-bg-dark bg-success" tabindex="-1" id="offcanvasDarkNavbar"
         aria-labelledby="offcanvasDarkNavbarLabel">
         <div class="offcanvas-header bg-success">
-            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Productos</h5>
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Categorias</h5>
             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
                 aria-label="Close"></button>
         </div>

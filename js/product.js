@@ -40,7 +40,7 @@ function displayProduct() {
                 <p>${producto.nombre}</p>
                 <h3>Descripción: </h3>
                 <p>${producto.descripcion}</p>
-                <h3>ingredientes: </h3>
+                <h>ingredientes: </h3>
                 <p>s</p>
     
             </div>
