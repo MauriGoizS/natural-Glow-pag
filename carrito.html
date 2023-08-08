@@ -11,6 +11,7 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="styles/style.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -28,10 +29,9 @@
         <div id="listado-productos" class="list-group">
         </div>
 
-
         <div class="contenedor-botones-accion">
           <a id="btn-eliminar" class="btn btn-danger" role="button">Eliminar carrito</a>
-          <a id="btn-comprar" class="btn btn-success" role="button">Realizar compra</a>
+          <a id="btn-comprar" class="btn btn-success" onclick="realizarCompra()" role="button">Realizar compra</a>
         </div>
 
 
@@ -42,6 +42,6 @@
 
   <script src="js/navbar.js"></script>
   <script src="js/carrito.js"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>

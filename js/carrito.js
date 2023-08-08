@@ -1,4 +1,5 @@
 let carrito = null;
+let cliente = null;
 
 const btnEliminar = document.getElementById('btn-eliminar');
 const btnComprar = document.getElementById('btn-comprar');
@@ -62,6 +63,42 @@ function eliminarCarrito() {
     obtenerCarrito();
     tieneProductosElCarrito();
     mostrarListadoProductos();
+}
+
+function validarSesion() {
+    cliente = localStorage.getItem('cliente');
+    return cliente !== null;
+}
+
+async function realizarCompra() {
+    if (validarSesion()) {
+        const form = new FormData();
+        form.append('carrito', JSON.stringify(carrito));
+        form.append('cliente', cliente);
+        const response = await fetch('/interfazCompleto/php/carrito/carrito.php', { method: 'POST', body: form});
+        const result = await response.json();
+        console.log(result.data);
+        result.data;
+
+        if (result.status === 201) {
+            Swal.fire({
+                icon: 'success',
+                title: 'Se ha realizado tu compra exitosamente',
+                text: 'Tu clave de rastreo de la compra es:' + result.data.idCompra,
+                confirmButtonText: 'Aceptar',
+            }).then(() => {
+                window.location.href = '/interfazCompleto/index.html';
+            });
+            eliminarCarrito();
+        }
+        
+    } else {
+        Swal.fire({
+            icon: 'warning',
+            title: 'Oops...',
+            text: 'Para continuar con tu compra, primero tienes que iniciar sesión!'
+        });
+    }
 }
 
 btnEliminar.addEventListener('click', eliminarCarrito);

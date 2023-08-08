@@ -7,7 +7,6 @@ function usuarioEstaLogueado() {
     const cliente = localStorage.getItem('cliente');
     if (cliente !== null) {
         const clienteObject = JSON.parse(cliente);
-        console.log('Esta imprimiendo clienteObject', clienteObject);
         document.getElementById('user-name').innerText = clienteObject.nombres;
     } else {
         document.getElementById('user-name').innerText = '';
@@ -56,16 +55,13 @@ document.getElementById('navbar').innerHTML = /*html*/ `
                         href="/interfazCompleto/apartado/cuidadoCabello.html">Cuidado de cabello</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page"
-                        href="/interfazCompleto/apartado/cuidadoFacial.html">Cuidado facial</a>
+                    <a class="nav-link active" aria-current="page" href="/interfazCompleto/apartado/cuidadoFacial.html">Cuidado facial</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page"
-                        href="/interfazCompleto/apartado/cuidadoPiel.html">Cuidado de la piel</a>
+                    <a class="nav-link active" aria-current="page" href="/interfazCompleto/apartado/cuidadoPiel.html">Cuidado de la piel</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page"
-                        href="/interfazCompleto/apartado/maquillaje.html">Maquillaje</a>
+                    <a class="nav-link active" aria-current="page" href="/interfazCompleto/apartado/maquillaje.html">Maquillaje</a>
                 </li>
             </ul>
         </div>
@@ -87,11 +83,13 @@ document.getElementById('navbar').innerHTML = /*html*/ `
                     <a class="nav-link active" aria-current="page" href="/interfazCompleto/registro.html">Registrarse</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/interfazCompleto/estatus.html">Seguimiento del
-                        pedido</a>
+                    <a class="nav-link active" aria-current="page" href="/interfazCompleto/estatus.html">Seguimiento del pedido</a>
                 </li>
                 <li class="nav-item">
                     <a id="cerrar-sesion" class="nav-link active pointer" aria-current="page">Cerrar sesión</a>
+                </li>
+                <li class="nav-item btn-admin">
+                    <a id="cerrar-sesion" class="nav-link active pointer " aria-current="page" href="/interfazCompleto/interfazAdmin/loginEmpleado.html">Administrador</a>
                 </li>
             </ul>
         </div>
